@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Rolagem suave */
+    scroll-padding-top: 35%; /* Centraliza o conteúdo na tela, ajustando para 50% da altura da tela */
+}
+
+
+body {
+    height: 100vh;
+    
+}
+
+.box-principal {
+    width: 40%;
+}
+
+.logo-principal {
+    height: 350px;
+    margin-bottom: 50px;
+
+}
+
+.logo-secundario {
+    height: 400px;
+    margin-top: 900px;
+    margin-left: 1000px;
+}
+
+
+.botao-serie {
+    color: white;
+    background-color: #C51111;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.botao-serie:hover {
+    background-color: #da5757;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+.video-pag1 {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+
+
+.caixa-mae {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+
+p {
+    color: white;
+    font-size: 20px;
+    width: 700px;
+}
+
+
+
+.Contatos {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    gap: 5px;
+
+}
+
+.link-whats {
+    height: 45px;
+    right: 20px;
+    margin-left: 2480px;
+}
+
+.link-linkedln {
+    height: 45px;
+    right: 20px;
+    margin-left: 2480px;
+}
+
+.link-github {
+    height: 45px;
+    right: 20px;
+    margin-left: 2480px;
+}
+
+
+
+
+/*  -------------------------------HEADER --------------------------------------  */
+
+
+header {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+}
+
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 10px;
+}
+
+.logo-header img {
+    height: 80px;
+}
+
+.logo-header a {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.logo-header a:hover {
+    color: #C51111;
+    font-size: 23px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Estilizando o menu dropdown */
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #C51111;
+    min-width: 120px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    margin-top: 15px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #C51111;
+    font-size: 23px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Posicionamento dos ícones de plataforma */
+.plataformas {
+    position: fixed;
+    display: flex;
+    gap: 30px;
+    top: 2%;
+    margin-left: 1950px;
+}
+
+.disponivel {
+    margin-top: 6px;
+    width: 140px;
+}
+
+.steam {
+    width: 120px;
+}
+
+.ps5 {
+    width: 110px;
+    margin-bottom: 5px;
+}
+
+.ps4 {
+    width: 110px;
+}
+
+
+/*  -------------------------------HEADER --------------------------------------  */
+
+
+form {
+    background-color: white;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    position: fixed;
+    top: 35%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: left 1s ease-in-out;
+}
+
+
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    outline-color: #C51111;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    outline-color: #C51111;
+}
+
+
+.botao-orçamento {
+    color: white;
+    background-color: #C51111;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.botao-orçamento:hover {
+    background-color: #da5757;
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(71, 0, 0, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 0.7s ease-in-out;
+}
+
+
+
+
+.joel {
+    display: flex;
+    gap: 110px;
+}
+
+.img-joel {
+    width: 1100px;
+    margin-left: 200px;
+}
+
+
+.atributos-joel {
+    margin-top: 100px;
+}
+
+
+
+
+.ellie {
+    display: flex;
+    gap: 250px;
+}
+
+.atributos-ellie {
+    margin-top: 200px;
+    margin-left: 250px;
+}
+
+.img-ellie {
+    width: 1100px;
+    margin-top: 150px;
+}
+
+
+
+
+.abby {
+    display: flex;
+    gap: 110px;
+    margin-top: 150px;
+}
+
+.img-abby {
+    width: 1100px;
+    margin-left: 200px;
+}
+
+
+.atributos-abby {
+    margin-top: 20px;
+}
+
+
+
+
+.tess {
+    display: flex;
+    gap: 250px;
+}
+
+.atributos-tess {
+    margin-top: 200px;
+    margin-left: 250px;
+}
+
+.img-tess {
+    width: 1100px;
+    margin-top: 150px;
+}
+
+
+
+
+.bill {
+    display: flex;
+    gap: 110px;
+    margin-top: 150px;
+}
+
+.img-bill {
+    width: 1100px;
+    margin-left: 200px;
+}
+
+
+.atributos-bill {
+    margin-top: 30px;
+}
+
+
+
+
+.elenco {
+    margin-top: 150px;
+    margin-left: 40%;
+}
+
+
+.todos-personagens  {
+    display: flex;
+    gap: 110px;
+    margin-top: 70px;
+    margin-left: 100px;
+    
+}
+    
+
+.img-elenco {
+    width: 1400px;
+    
+}
+
+.todos{
+    width: 900px;
+}
+
+
+
+
+
+
+
+
