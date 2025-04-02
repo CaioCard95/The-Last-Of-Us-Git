@@ -18,17 +18,10 @@ body {
 
 .logo-principal {
     height: 350px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
 }
 
-.logo-secundario {
-    height: 350px;
-    position: fixed;
-    margin-top: 330px;
-    margin-left: -450px;
-   
-}
 
 
 .botao-serie {
@@ -94,33 +87,34 @@ p {
 
 
 
+
+
+
 .Contatos {
     display: flex;
     position: fixed;
     flex-direction: column;
     bottom: 20px;
-    gap: 5px;
-
+    right: 20px; /* Mantém os ícones na lateral direita */
+    gap: 10px;
+    align-items: flex-end; /* Ajusta a posição corretamente */
 }
 
-.link-whats {
+.Contatos a {
+    display: inline-block; /* Garante que só o ícone ocupe espaço clicável */
+}
+
+.Contatos a img {
     height: 45px;
-    right: 20px;
-    margin-left: 2480px;
-
+    width: auto;
+    transition: transform 0.3s;
 }
 
-.link-linkedln {
-    height: 45px;
-    right: 20px;
-    margin-left: 2480px;
+.Contatos a img:hover {
+    transform: scale(1.1);
 }
 
-.link-github {
-    height: 45px;
-    right: 20px;
-    margin-left: 2480px;
-}
+
 
 
 
@@ -144,7 +138,7 @@ header {
 }
 
 .logo-header img {
-    height: 80px;
+    height: 65px;
 }
 
 .logo-header a {
@@ -195,9 +189,9 @@ header {
 .plataformas {
     position: fixed;
     display: flex;
-    gap: 30px;
-    top: 2%;
-    margin-left: 1950px;
+    gap: 20px;
+    top: 3%;
+    margin-left: 1550px;
 }
 
 .disponivel {
@@ -289,20 +283,26 @@ textarea {
 
 
 
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ajuste conforme necessário */
+    justify-content: center;
+    align-items: center; /* Centraliza os itens dentro */
+}
+
+
+
+
 .joel {
     display: flex;
     gap: 110px;
 }
 
 .img-joel {
-    width: 900px;
-    margin-left: 200px;
+    width: 700px;
 }
 
-
-.atributos-joel {
-    margin-top: 50px;
-}
 
 
 .joel-mobile {
@@ -319,16 +319,16 @@ textarea {
 
 .ellie {
     display: flex;
-    gap: 250px;
+    gap: 110px;
 }
 
 .atributos-ellie {
-    margin-top: 200px;
-    margin-left: 250px;
+    margin-top: 150px;
+    
 }
 
 .img-ellie {
-    width: 900px;
+    width: 700px;
     margin-top: 150px;
 }
 
@@ -352,15 +352,9 @@ textarea {
 }
 
 .img-abby {
-    width: 900px;
-    margin-left: 200px;
+    width: 700px;
+    
 }
-
-
-.atributos-abby {
-    margin-top: 20px;
-}
-
 
 
 .abby-mobile {
@@ -377,16 +371,16 @@ textarea {
 
 .tess {
     display: flex;
-    gap: 250px;
+    gap: 110px;
 }
 
 .atributos-tess {
     margin-top: 200px;
-    margin-left: 250px;
+    
 }
 
 .img-tess {
-    width: 900px;
+    width: 700px;
     margin-top: 150px;
 }
 
@@ -409,8 +403,8 @@ textarea {
 }
 
 .img-bill {
-    width: 900px;
-    margin-left: 200px;
+    width: 700px;
+    
 }
 
 
@@ -432,7 +426,7 @@ textarea {
 
 .elenco {
     margin-top: 150px;
-    margin-left: 40%;
+    
 }
 
 
@@ -440,18 +434,18 @@ textarea {
     display: flex;
     gap: 110px;
     margin-top: 70px;
-    margin-left: 150px;
+    
     
 }
     
 
 .img-elenco {
-    width: 1000px;
+    width: 800px;
     
 }
 
 .todos{
-    width: 900px;
+    width: 800px;
 }
 
 
@@ -463,16 +457,16 @@ textarea {
 
 
 
-@media(max-width: 2250px) {
-    .logo-secundario{
-        display: none;
-    }
-    
-}
-
 
 
 @media(max-width: 1450px) {
+
+
+    .dropdown-content{
+        display: none;
+    }
+ 
+
     .joel {
         display: flex;
         flex-direction: column;
@@ -480,7 +474,7 @@ textarea {
     }
     
     .img-joel {
-        width: 900px;
+        width: 650px;
         margin-left: 100px;
     }
     
@@ -504,7 +498,7 @@ textarea {
     }
     
     .img-ellie {
-        width: 900px;
+        width: 650px;
         margin-left: 100px;
     }
     
@@ -528,7 +522,7 @@ textarea {
     }
     
     .img-abby {
-        width: 900px;
+        width: 650px;
         margin-left: 100px;
     }
     
@@ -552,7 +546,7 @@ textarea {
     }
     
     .img-tess {
-        width: 900px;
+        width: 650px;
         margin-left: 100px;
     }
     
@@ -577,7 +571,7 @@ textarea {
     }
     
     .img-bill {
-        width: 900px;
+        width: 650px;
         margin-left: 100px;
     }
     
@@ -604,7 +598,7 @@ textarea {
     }
     
     .img-elenco {
-        width: 900px;
+        width: 650px;
         margin-left: -30px;
     }
     
